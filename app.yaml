@@ -3,7 +3,7 @@ apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
   name: quota-exporter
-  namespaces: kube-system
+  namespace: kube-system
   annotations:
     prometheus.io/scrape: "true"
     prometheus.io/port: "8080"
